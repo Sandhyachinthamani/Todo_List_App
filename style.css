@@ -1,65 +1,87 @@
-body{
+/* General Styles */
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(247, 236, 229);
     width: 100vw;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
-#heading{
+
+#heading {
     text-align: center;
+    margin-bottom: 20px;
 }
-.grid-container, #todo-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: 4vw 30vw 10vw 10vw;
     gap: 2vh;
     margin-top: 2vh;
     align-items: center;
     justify-content: center;
+    word-wrap: break-word;
+    max-width: 100%; /* Ensure container stays within the viewport */
+}
+
+#todo-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 4vw 30vw 10vw 10vw;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     word-wrap: break-word;
 }
-#todo-date, #todo-input{
+
+#todo-input, #todo-date {
     font-size: 15px;
     padding: 10px 5px;
+    width: 100%; /* Ensure input fields take up full width */
+    box-sizing: border-box; /* Ensure padding doesn't overflow the box */
 }
-.btn-delete, .btn-add{
-    padding: 15px;
+
+.btn-add, .btn-delete {
+    padding: 12px 10px;
     color: white;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensure button padding stays within the box */
 }
-.btn-delete{
-    background-color: brown;
-}
-.btn-add{
+
+.btn-add {
     background-color: green;
 }
+
+.btn-delete {
+    background-color: brown;
+}
+
+/* Mobile View */
 @media screen and (max-width: 480px) {
     .grid-container, #todo-container {
-        grid-template-columns: 1fr 2fr 1fr; /* Adjust grid to 3 columns */
-        gap: 2vh; /* Adjust gap for better spacing */
-        margin-top: 1vw;
+        grid-template-columns: 1fr 2fr 1fr; /* Adjusted for mobile screens */
+        gap: 1vh;
     }
 
-    #todo-input {
+    #todo-input, #todo-date {
         font-size: 14px;
         padding: 8px;
-        grid-column: span 2; /* Span across two columns */
+        grid-column: span 2; /* Make inputs span two columns */
     }
 
-    #todo-date {
-        font-size: 14px;
-        padding: 8px;
+    .btn-add, .btn-delete {
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
     }
 
     .btn-add {
-        grid-column: span 3; /* Add button takes full width */
-        padding: 12px;
-        font-size: 12px;
-        text-align: center; /* Center align the text */
-    }
-
-    .btn-delete {
-        padding: 12px;
-        font-size: 12px;
+        grid-column: span 3; /* Add button spans full width on mobile */
     }
 }
