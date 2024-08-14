@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -40,24 +40,9 @@ body{
     background-color: green;
 }
 @media screen and (max-width: 480px) and (min-width:320px){
-    span{
-        font-size: 10px;
-    }
     .grid-container, #todo-container{
-        grid-template-columns: 4vw 40vw 20vw 20vw;
-        gap: 0.5vw;
+        grid-template-columns: 4vw 30vw 20vw 22vw;
+        gap: 1vw;
         margin-top: 1vw;
-    }
-    #todo-date, #todo-input{
-        font-size: 12px;
-        padding: 8px 3px;
-    }
-    .btn-delete{
-        padding: 8px;
-        margin-left: 2vw;
-    }
-    .btn-add{
-        padding: 10px;
-        margin-left: 2vw;
     }
 }
