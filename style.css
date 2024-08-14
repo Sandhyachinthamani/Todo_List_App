@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(247, 236, 229);
@@ -6,6 +9,7 @@ body{
 }
 #heading{
     text-align: center;
+    margin-top: 18px;
 }
 .grid-container, #todo-container{
     display: grid;
@@ -35,13 +39,22 @@ body{
     background-color: green;
 }
 @media screen and (max-width: 480px){
+    span{
+        font-size: 12px;
+    }
     .grid-container, #todo-container{
-        grid-template-columns: 4vw 40vw 25vw 20vw;
-        gap: 1vh;
+        grid-template-columns: 20px 130px 80px 60px;;
+        gap: 3px;
         margin-top: 1vw;
     }
-    
+    #todo-date, #todo-input{
+        font-size: 12px;
+        padding: 8px 3px;
+    }
     .btn-delete{
+        padding: 8px;
+    }
+    .btn-add{
         padding: 10px;
     }
 }
