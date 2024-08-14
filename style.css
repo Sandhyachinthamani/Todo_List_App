@@ -61,7 +61,7 @@ body {
 /* Mobile View */
 @media screen and (max-width: 480px) {
     .grid-container, #todo-container {
-        grid-template-columns: 0.5fr 1fr 3fr 1fr; /* Adjust grid to 3 columns */
+        grid-template-columns:1fr 3fr 1fr 1fr; /* Adjust grid to 3 columns */
         gap: 1vw;
     }
 
