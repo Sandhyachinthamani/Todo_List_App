@@ -43,7 +43,7 @@ body{
         font-size: 12px;
     }
     .grid-container, #todo-container{
-        grid-template-columns: 20px 130px 100px 60px;;
+        grid-template-columns: 20px 130px 110px 60px;;
         gap: 10px;
         margin-top: 1vw;
     }
@@ -51,10 +51,14 @@ body{
         font-size: 12px;
         padding: 8px 3px;
     }
+    #todo-date{
+        width:90px;
+    }
     .btn-delete{
         padding: 8px;
     }
     .btn-add{
         padding: 10px;
+        width:60px;
     }
 }
