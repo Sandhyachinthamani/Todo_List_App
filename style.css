@@ -13,7 +13,7 @@ body{
 }
 .grid-container, #todo-container{
     display: grid;
-    grid-template-columns: 4vw 30vw 10vw 10vw;
+    grid-template-columns: 4vw 30vw 10vw 8vw;
     gap: 2vh;
     margin-top: 2vh;
     align-items: center;
@@ -43,8 +43,8 @@ body{
         font-size: 12px;
     }
     .grid-container, #todo-container{
-        grid-template-columns: 20px 130px 80px 60px;;
-        gap: 3px;
+        grid-template-columns: 20px 130px 100px 60px;;
+        gap: 10px;
         margin-top: 1vw;
     }
     #todo-date, #todo-input{
