@@ -33,12 +33,20 @@ body{
 .btn-add{
     background-color: green;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .grid-container, #todo-container {
         grid-template-columns: 10vw 1fr 1fr 1fr; /* Adjusted grid columns to give more space to inputs */
         gap: 2vh; /* Increased gap for better spacing */
         margin-top: 1vw;
-    .btn-delete{
-        padding: 10px;
+    }
+
+    #todo-input, #todo-date {
+        font-size: 14px;
+        padding: 8px; /* Reduced padding for smaller screens */
+    }
+
+    .btn-add, .btn-delete {
+        padding: 12px; /* Reduced padding for smaller screens */
+        font-size: 12px; /* Adjust font size for buttons */
     }
 }
