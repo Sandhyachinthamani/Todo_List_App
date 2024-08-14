@@ -11,6 +11,9 @@ body{
 #heading{
     text-align: center;
 }
+.grid-container{
+    max-width: 100%;
+}
 .grid-container, #todo-container{
     display: grid;
     grid-template-columns: 4vw 30vw 10vw 10vw;
