@@ -25,6 +25,7 @@ body{
 #todo-date, #todo-input{
     font-size: 15px;
     padding: 10px 5px;
+    margin-left: 1vw;
 }
 .btn-delete, .btn-add{
     padding: 15px;
@@ -32,6 +33,7 @@ body{
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    margin-left: 1vw;
 }
 .btn-delete{
     background-color: brown;
@@ -43,6 +45,6 @@ body{
     .grid-container, #todo-container{
         grid-template-columns: 4vw 30vw 20vw 22vw;
         gap: 1vw;
-        margin-top: 1vw;
+        margin: 1vw;
     }
 }
