@@ -20,8 +20,7 @@ body {
     margin-top: 2vh;
     align-items: center;
     justify-content: center;
-    word-wrap: break-word;
-    max-width: 100%; /* Ensure container stays within the viewport */
+    max-width: 100%;
 }
 
 #todo-container {
@@ -31,15 +30,13 @@ body {
     gap: 2vh;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    word-wrap: break-word;
 }
 
 #todo-input, #todo-date {
     font-size: 15px;
     padding: 10px 5px;
-    width: 100%; /* Ensure input fields take up full width */
-    box-sizing: border-box; /* Ensure padding doesn't overflow the box */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .btn-add, .btn-delete {
@@ -50,7 +47,7 @@ body {
     cursor: pointer;
     text-align: center;
     width: 100%;
-    box-sizing: border-box; /* Ensure button padding stays within the box */
+    box-sizing: border-box;
 }
 
 .btn-add {
@@ -64,24 +61,23 @@ body {
 /* Mobile View */
 @media screen and (max-width: 480px) {
     .grid-container, #todo-container {
-        grid-template-columns: 1fr 2fr 1fr; /* Adjusted for mobile screens */
-        gap: 1vh;
+        grid-template-columns: 1fr 3fr 1fr; /* Adjust grid to 3 columns */
+        gap: 1vw;
+    }
+
+    .grid-container div:first-child {
+        grid-column: span 1; /* Keep the empty div occupying a small space */
     }
 
     #todo-input, #todo-date {
         font-size: 14px;
         padding: 8px;
-        grid-column: span 2; /* Make inputs span two columns */
+        width: auto;
     }
 
     .btn-add, .btn-delete {
         padding: 10px;
         font-size: 12px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn-add {
-        grid-column: span 3; /* Add button spans full width on mobile */
+        width: auto;
     }
 }
