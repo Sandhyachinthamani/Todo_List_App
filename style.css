@@ -80,6 +80,10 @@ body{
 
     .btn-add, .btn-delete {
         padding: 10px;
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .btn-edit, .btn-save {
+        padding: 9px 0px;
+        font-size: 10px;
     }
 }
