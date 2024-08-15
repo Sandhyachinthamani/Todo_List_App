@@ -23,6 +23,17 @@ body{
     word-wrap: break-word;
     max-width: 100%;
 }
+#todo-container{
+    display: grid;
+    grid-template-columns: 4vw 40vw 20vw 4vw 6vw;
+    gap: 2vh;
+    margin-top: 2vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 100%;
+}
 #todo-date, #todo-input{
     font-size: 15px;
     padding: 10px 5px;
@@ -34,10 +45,18 @@ body{
     border: none;
     cursor: pointer;
 }
+.btn-edit, .btn-save{
+    padding:14px 0px;
+    border-radius: 10px;
+    border: none;
+}
 .btn-delete{
     background-color: brown;
 }
-.btn-add{
+.btn-edit{
+    background-color: #f7d896;
+}
+.btn-add, .btn-save{
     background-color: green;
 }
 @media screen and (max-width: 480px) {
