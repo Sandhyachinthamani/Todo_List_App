@@ -64,7 +64,10 @@ body{
         grid-template-columns: 10vw 30vw 30vw 20vw;
         gap: 1vw;
     }
-
+    #todo-container{
+        grid-template-columns: 10vw 30vw 30vw 7vw 12vw;
+        gap: 0.7vh;
+    }
     span{
         font-size: 13px;
     }
