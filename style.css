@@ -64,7 +64,7 @@ body{
         gap: 1vw;
     }
     #todo-container{
-        grid-template-columns: 9vw 35vw 23vw 8vw 13vw;
+        grid-template-columns: 9vw 35vw 18vw 8vw 13vw;
         gap: 1vh;
     }
     span{
