@@ -36,7 +36,6 @@ body{
 #todo-date, #todo-input{
     font-size: 15px;
     padding: 10px 5px;
-    max-width: 100%;
 }
 .btn-delete, .btn-add{
     padding: 15px;
@@ -65,7 +64,7 @@ body{
         gap: 1vw;
     }
     #todo-container{
-        grid-template-columns: 9vw 30vw 30vw 8vw 13vw;
+        grid-template-columns: 9vw 35vw 25vw 8vw 13vw;
         gap: 0.7vh;
     }
     span{
@@ -80,7 +79,9 @@ body{
         font-size: 12px;
         padding: 8px;
     }
-
+    .taskinput{
+        width: 90%;
+    }
     .btn-add{
         padding: 10px;
         font-size: 14px;
