@@ -64,8 +64,8 @@ body{
         gap: 1vw;
     }
     #todo-container{
-        grid-template-columns: 9vw 35vw 25vw 8vw 13vw;
-        gap: 0.7vh;
+        grid-template-columns: 9vw 35vw 23vw 8vw 13vw;
+        gap: 1vh;
     }
     span{
         font-size: 13px;
@@ -79,9 +79,9 @@ body{
         font-size: 12px;
         padding: 8px;
     }
-    .taskinput{
+    /* .taskinput{
         width: 90%;
-    }
+    } */
     .btn-add{
         padding: 10px;
         font-size: 14px;
