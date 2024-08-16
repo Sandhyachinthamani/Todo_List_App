@@ -79,9 +79,9 @@ body{
         font-size: 12px;
         padding: 8px;
     }
-    /* .taskinput{
+    .taskdateinput{
         width: 90%;
-    } */
+    }
     .btn-add{
         padding: 10px;
         font-size: 14px;

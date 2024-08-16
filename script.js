@@ -71,12 +71,12 @@ function enterEditMode(index, itemSpan, dateSpan) {
     // Create input fields with the current task data
     let itemInput = document.createElement('input');
     itemInput.type = 'text';
-    itemInput.classList.add('taskinput');
+    itemInput.classList.add('taskiteminput');
     itemInput.value = todoList[index].item;
 
     let dateInput = document.createElement('input');
     dateInput.type = 'date';
-    dateInput.classList.add('taskinput');
+    dateInput.classList.add('taskdateinput');
     dateInput.value = todoList[index].duedate;
 
     // Replace the text with input fields
